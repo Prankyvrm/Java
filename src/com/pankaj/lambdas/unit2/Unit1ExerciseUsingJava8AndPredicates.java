@@ -1,4 +1,4 @@
-package com.pankaj.lambdas.exercise.unit2;
+package com.pankaj.lambdas.unit2;
 
 import com.pankaj.lambdas.exercise.Person;
 

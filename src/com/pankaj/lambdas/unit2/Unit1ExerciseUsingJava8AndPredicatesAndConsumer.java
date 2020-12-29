@@ -1,8 +1,7 @@
-package com.pankaj.lambdas.exercise.unit2;
+package com.pankaj.lambdas.unit2;
 
 import com.pankaj.lambdas.exercise.Person;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
