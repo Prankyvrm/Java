@@ -1,8 +1,14 @@
-package com.pankaj.lambdas.exercise;
+package com.pankaj.lambdas.exercise.unit2;
 
-import java.util.*;
+import com.pankaj.lambdas.exercise.Person;
 
-public class Unit1ExerciseUsingJava8 {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class Unit1ExerciseUsingJava8AndPredicates {
     public static void main(String[] args) {
         List<Person> people = Arrays.asList(
                 new Person("Pankaj", "Verma", 35),
@@ -73,15 +79,15 @@ public class Unit1ExerciseUsingJava8 {
         }
     }
 
-    public static List<Person> filterListBasedOnCondition(List<Person> people, CheckCondition checkCondition) {
+    public static List<Person> filterListBasedOnCondition(List<Person> people, Predicate<Person> predicate) {
         List<Person> filteredList = new ArrayList<>();
         for (Person person : people) {
-            if (checkCondition.checkIfValid(person)) {
+            if (predicate.test(person)) {
                 filteredList.add(person);
             }
 
         }
         return filteredList;
     }
-
 }
+
